@@ -1,0 +1,15 @@
+.bg-custom{
+  background-image: linear-gradient(to right,
+   rgba(59,103,158,1) 0%,
+   rgba(125,185,232,1) 100%);
+  border-radius: 5px 5px 10px 10px;
+
+  hover {
+    color: red;
+  }
+}
+
+/*.homeIcon:hover {
+  color: red;
+  background-image: linear-gradient(to bottom right, red, yellow);
+}*/

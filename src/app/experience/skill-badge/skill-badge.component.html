@@ -1,0 +1,8 @@
+<span class="badge badge-pill mr-2" 
+      *ngIf="skill"
+      [title]="skill.domain.timeExpirience | json" 
+      [ngClass]="skill.selected ? 'badge-primary' : 'badge-dark'"
+      (mouseenter)="markSkill()"
+      (mouseleave)="unMarkSkill()">
+  {{skill.skill.name}}
+</span>
