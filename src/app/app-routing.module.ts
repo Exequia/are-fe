@@ -1,32 +1,29 @@
-import { NgModule }              from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component'
 
-const appRoutes: Routes = [
-  { 
+export const appRoutes: Routes = [
+  {
     pathMatch: 'full',
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
-  { 
+  {
     pathMatch: 'full',
-    path: 'home', 
-    component: HomeComponent 
+    path: 'home',
+    component: HomeComponent,
   },
   //,{ path: '**', component: PageNotFoundComponent }
-];
-
+]
 
 @NgModule({
   imports: [
     RouterModule.forRoot(
-      appRoutes
+      appRoutes,
       //,{ enableTracing: true } // <-- debugging purposes only
-    )
+    ),
   ],
-  exports: [
-    RouterModule
-  ]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
